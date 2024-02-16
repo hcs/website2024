@@ -38,16 +38,26 @@ export default function Board() {
             />
           </div>
         </FadeInSection>
-        <div className="flex flex-row flex-wrap gap-10 mt-20 justify-evenly">
+        <div className="flex flex-row flex-wrap gap-10 mt-20 justify-evenly md:mx-8">
           <ProfileCard
             name="Maya Dummett"
             position="Director of Community"
             image="/board/maya.jpg"
           />
           <ProfileCard
+            name="Sabrina Zhu"
+            position="Director of Community"
+            image="/board/sabrina.jpg"
+          />
+          <ProfileCard
             name="Karina Chung"
             position="Director of Professional Development"
             image="/board/karina.JPG"
+          />
+          <ProfileCard
+            name="Michael Shaari"
+            position="Director of Professional Development"
+            image="/board/michael.jpeg"
           />
           <ProfileCard
             name="Marvin Li"
@@ -63,6 +73,11 @@ export default function Board() {
             name="Jackson Moody"
             position="Director of Outreach & Engagement"
             image="/board/jackson.jpeg"
+          />
+          <ProfileCard
+            name="Wency Suo"
+            position="Director of Finance"
+            image="/board/wency.jpg"
           />
         </div>
       </div>
