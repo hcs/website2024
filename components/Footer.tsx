@@ -4,8 +4,8 @@ export default function Footer() {
       <p className="pr-4">&copy; Harvard Computer Society 2024</p>
       <p className="pl-4">
         <strong>Contact Us</strong>:{" "}
-        <a href="mailto:hcs-board@hcs.harvard.edu" className="link">
-          hcs-board@hcs.harvard.edu
+        <a href="mailto:presidents@hcs.harvard.edu" className="link">
+          presidents@hcs.harvard.edu
         </a>
       </p>
     </footer>

@@ -10,7 +10,14 @@ export default function Events() {
         "https://www.googleapis.com/calendar/v3/calendars/c_a4b72545aacd2a318972fc1665d92f5b2dc515fd4fe35fe1b2378ead6d19edba%40group.calendar.google.com/events?key=AIzaSyAl-mMCiRKfXONOwLo6dh9HiQOsr6vCps0"
       )
         .then((res) => res.json())
-        .then((data) => setEvents(data));
+        .then((data) => {
+          if (!data.items) return;
+          const upcomingEvents = data.items.filter(
+            (event: { start: { dateTime: string } }) =>
+              new Date(event.start.dateTime) > new Date()
+          );
+          setEvents(upcomingEvents);
+        });
     } catch (e) {
       console.error(e);
     }

@@ -50,9 +50,9 @@ export default function CodeText({
   }, [blinkCount, showCursor, text.length, titleWordIdx]);
 
   return (
-    <div className="max-w-4xl absolute top-64 mx-10">
+    <div className="max-w-4xl absolute top-52 sm:top-64 mx-10">
       <div className={zilla.className}>
-        <h1 className="text-4xl sm:text-6xl lg:text-8xl text-white">
+        <h1 className="text-5xl sm:text-6xl lg:text-8xl text-white">
           {text.slice(0, titleWordIdx)}
           {showCursor && <span>&#9647;</span>}
         </h1>
