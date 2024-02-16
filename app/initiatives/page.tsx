@@ -37,13 +37,21 @@ export default function Initiatives() {
           color="bg-[#e6fcf4]"
         />
         <ImageCard
+          image="/product-lab.png"
+          title="Product Lab"
+          subtitle="HCS Affiliate"
+          description="Through semester-long product management projects, we aim to help companies and organizations produce long-term, sustainable growth by understanding customer needs and developing research-driven strategy."
+          link="https://www.hcsproductlab.org/"
+          color="bg-[#fff7cf]"
+          reverse
+        />
+        <ImageCard
           image="/tghi.png"
           title="Tech and Global Health Initiative"
           subtitle="HCS Affiliate"
           description="We strive to advance global health equity through innovation, education, and partnerships. We build cutting-edge, compassionate solutions to address pressing health challenges and aim to equip students of all backgrounds with the skills to do so. We hope to inspire the next generations of young leaders to envision a future in the field of global health technology."
           link="https://techglobalhealth.org/"
           color="bg-[#d4e4ff]"
-          reverse
         />
         <ImageCard
           image="/startups.png"
@@ -52,6 +60,7 @@ export default function Initiatives() {
           subtitle="HCS Affiliate"
           description="We are a community of students at Harvard who are passionate about startups and tech products that will shape the future. We host numerous events for students to learn about startups together, including Startup Series (bi-weekly discussion group) and Startup Trek (spring trip to visit startups in NYC)."
           link="https://www.startupsatharvard.com/"
+          reverse
         />
         <ImageCard
           image="/recompute.png"
@@ -61,7 +70,6 @@ export default function Initiatives() {
           description="We aim to cultivate an interdisciplinary undergraduate community for critically examining and improving structures for responsible tech use in society."
           link="https://harvard-recompute.github.io/"
           color="bg-[#d4e4ff]"
-          reverse
         />
       </div>
     </>
