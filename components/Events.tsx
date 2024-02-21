@@ -29,8 +29,8 @@ export default function Events() {
         Upcoming Events
       </h1>
       <div className="flex flex-row flex-wrap gap-10 justify-center">
-        {events && events.items && events.items.length > 0 ? (
-          events.items.map(
+        {events && events.length > 0 ? (
+          events.map(
             (event: {
               id: Key | null | undefined;
               summary: string;
