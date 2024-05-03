@@ -50,7 +50,7 @@ export default function Home() {
             Harvard&apos;s Largest Computer Science Organization
           </h1>
           <p className="text-xl font-extralight text-center">
-            Dedicated to promoting interest in computing and information
+            HCS is dedicated to promoting interest in computing and information
             technologies among members of the Harvard community
           </p>
         </FadeInSection>
