@@ -8,6 +8,9 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Harvard Computer Society",
   description: "Harvard College's Premier Computer Science Organization",
+  alternates: {
+    canonical: "https://hcs.harvard.edu/",
+  },
 };
 
 export default function RootLayout({
