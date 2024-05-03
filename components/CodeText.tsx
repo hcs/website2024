@@ -52,18 +52,25 @@ export default function CodeText({
   return (
     <div className="max-w-4xl absolute top-52 sm:top-64 mx-10">
       <div className={zilla.className}>
-        <h1 className="text-5xl sm:text-6xl lg:text-8xl text-white">
+        <h1 className="text-5xl font-bold sm:text-6xl lg:text-8xl text-white">
           {text.slice(0, titleWordIdx)}
           {showCursor && <span>&#9647;</span>}
         </h1>
-        {showButton && showButtonLocal && (
-          <Link href="/about">
-            <Button size="xl" className="mt-12 text-lg animate-in">
-              Learn More
-            </Button>
-          </Link>
-        )}
       </div>
+      {showButton && showButtonLocal && (
+        <>
+          <div className={zilla.className}>
+            <p className="text-white font-thin sm:text-3xl animate-in pt-10">
+              A student-run organization at Harvard College
+            </p>
+            <Link href="/about">
+              <Button size="xl" className="mt-12 text-lg animate-in">
+                Learn More
+              </Button>
+            </Link>
+          </div>
+        </>
+      )}
     </div>
   );
 }
