@@ -16,7 +16,18 @@ export default function Events() {
             (event: { start: { dateTime: string } }) =>
               new Date(event.start.dateTime) > new Date()
           );
-          setEvents(upcomingEvents);
+          const sortedEvents = upcomingEvents.sort(
+            (
+              a: { start: { dateTime: string } },
+              b: { start: { dateTime: string } }
+            ) => {
+              return (
+                new Date(a.start.dateTime).getTime() -
+                new Date(b.start.dateTime).getTime()
+              );
+            }
+          );
+          setEvents(sortedEvents);
         });
     } catch (e) {
       console.error(e);
