@@ -41,11 +41,12 @@ This will update the website deployment within 24 hours. To accelerate this proc
 
 ## Built With
 
-  - [Next.js](https://nextjs.org/) 
+  - [Next.js](https://nextjs.org/)
+  - [Typescript](https://www.typescriptlang.org/)
   - [Radix UI](https://www.radix-ui.com/)
   - [Tailwind CSS](https://tailwindcss.com/)
   - And more!
 
 ## Authors
 
-This website was built by [Jackson Moody](https://www.jacksonmoody.com/) in Spring of 2024. Feel free to [reach out](mailto:jacksonmoody@college.harvard.edu) if you have any questions!
+This website was built by [Jackson Moody](https://www.jacksonmoody.com/) in Spring 2024. Feel free to [reach out](mailto:jacksonmoody@college.harvard.edu) if you have any questions!
