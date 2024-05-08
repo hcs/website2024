@@ -3,6 +3,7 @@ import CodeText from "@/components/CodeText";
 import Link from "next/link";
 import Image from "next/image";
 import FadeInSection from "@/components/FadeInSection";
+import CustomCarousel from "@/components/CustomCarousel";
 import {
   Card,
   CardDescription,
@@ -44,7 +45,7 @@ export default function Home() {
         />
       </div>
       <CodeText text="Harvard Computer Society" showButton />
-      <div className="p-24">
+      <div className="p-10 sm:p-24">
         <FadeInSection>
           <h1 className="text-4xl md:text-5xl font-bold mb-10 text-center">
             Harvard&apos;s Largest Computer Science Organization
@@ -77,6 +78,67 @@ export default function Home() {
               </Card>
             ))}
           </div>
+        </FadeInSection>
+        <FadeInSection>
+          <h1 className="text-4xl md:text-5xl font-bold mt-20 mb-10 text-center">
+            Our Sponsers
+          </h1>
+          <p className="text-xl font-extralight text-center">
+            The work that the Harvard Computer Society does would not be
+            possible without the support of our generous sponsors. If you are
+            interested in sponsoring HCS,{"  "}
+            <span>
+              <a
+                className="group text-blue-600 transition-all duration-300 ease-in-out"
+                href="mailto:presidents@hcs.harvard.edu"
+              >
+                <span className="bg-left-bottom bg-gradient-to-r from-blue-600 to-blue-600 bg-[length:0%_1.5px] bg-no-repeat group-hover:bg-[length:100%_1.5px] transition-all duration-300 ease-out">
+                  please reach out
+                </span>
+              </a>
+            </span>
+            !
+          </p>
+          <CustomCarousel>
+            <a
+              href="https://www.janestreet.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image
+                src="/sponsors/janestreet.png"
+                alt="Jane Street Logo"
+                fill
+                style={{
+                  objectFit: "contain",
+                }}
+              />
+            </a>
+            <a
+              href="https://www.hudsonrivertrading.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image
+                src="/sponsors/hrt.png"
+                alt="HRT Logo"
+                fill
+                style={{
+                  objectFit: "contain",
+                }}
+              />
+            </a>
+            <a href="https://www.citadel.com/" target="_blank" rel="noreferrer">
+              <Image
+                src="/sponsors/citadel.jpg"
+                alt="Citadel Logo"
+                fill
+                style={{
+                  objectFit: "contain",
+                }}
+              />
+            </a>
+          </CustomCarousel>
         </FadeInSection>
       </div>
     </>
