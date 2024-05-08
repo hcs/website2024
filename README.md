@@ -34,7 +34,7 @@ The HCS website is deployed using [Cloudfront](https://aws.amazon.com/cloudfront
 
 After running `npm run build`, a `/out` folder will be created. To deploy the project on [hcs.harvard.edu](https://hcs.harvard.edu):
  - Navigate to the `hcs-2024-website` [Amazon S3 bucket](https://us-east-1.console.aws.amazon.com/s3/buckets/hcs-2024-website?region=us-east-1&bucketType=general&tab=objects)
- - Delete all of the files currently in the bucket
+ - Delete all of the objects currently in the bucket
  - Upload the contents of the `/out` folder to the root of the bucket
 
 This will update the website deployment within 24 hours. To accelerate this process, you can [invalidate the Cloudfront cache](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html).
