@@ -71,6 +71,15 @@ export default function Initiatives() {
           link="https://harvard-recompute.github.io/"
           color="bg-[#d4e4ff]"
         />
+        <ImageCard
+          image="/icpc.gif"
+          dimensions={{ height: 100, width: 500 }}
+          title="ICPC"
+          subtitle="HCS Affiliate"
+          description="The Harvard Computing Contest Club sends teams of undergraduates to compete in the ICPC Northeastern Regional Contest. In 2024, they received 14th place at the North American Championship and qualified for World Finals. In 2023, they were the 4th place team at the Northeast North America 2023 Regional Contest."
+          link="https://hc3.seas.harvard.edu/hc3/icpc/index.html"
+          reverse
+        />
       </div>
     </>
   );

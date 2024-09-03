@@ -81,7 +81,7 @@ export default function Home() {
         </FadeInSection>
         <FadeInSection>
           <h1 className="text-4xl md:text-5xl font-bold mt-20 mb-10 text-center">
-            Our Sponsers
+            Our Sponsors
           </h1>
           <p className="text-xl font-extralight text-center">
             The work that the Harvard Computer Society does would not be

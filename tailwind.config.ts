@@ -67,10 +67,16 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "bounce-custom": {
+          from: { transform: "translateX(-25%)" },
+          "50%": { transform: "translateX(25%)" },
+          to: { transform: "translateX(-25%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "bounce-slow": "bounce-custom 5s linear infinite",
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)"],
