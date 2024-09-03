@@ -1,9 +1,18 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import MenuBar from "@/components/MenuBar";
 import Footer from "@/components/Footer";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  viewportFit: "cover",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: "#a61c31",
+};
 
 export const metadata: Metadata = {
   title: "Harvard Computer Society",

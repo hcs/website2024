@@ -8,11 +8,11 @@ const zilla = Zilla_Slab({
   subsets: ["latin"],
 });
 
-export default function QR() {
+export default function Connect() {
   return (
     <div className="px-10 py-5">
       <div className={zilla.className}>
-        <h1 className="text-lg lg:text-8xl">
+        <h1 className="text-3xl lg:text-8xl">
           Thank you for your interest in the Harvard Computer Society!
         </h1>
       </div>
