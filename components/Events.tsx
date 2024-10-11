@@ -67,7 +67,9 @@ export default function Events() {
                 }
                 description={
                   event.description
-                    ? event.description.slice(0, 250) + "..."
+                    ? event.description.length > 250
+                      ? event.description.substring(0, 250) + "..."
+                      : event.description
                     : ""
                 }
                 link={event.htmlLink}

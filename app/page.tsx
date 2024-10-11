@@ -33,6 +33,28 @@ export default function Home() {
       description: "Learn how to get involved with Harvard Computer Society!",
     },
   ];
+  const events = [
+    {
+      title: "Event 3",
+      image: "/events/1.jpg",
+    },
+    {
+      title: "Event 3",
+      image: "/events/2.jpg",
+    },
+    {
+      title: "Event 3",
+      image: "/events/3.jpg",
+    },
+    {
+      title: "Event 3",
+      image: "/events/4.jpg",
+    },
+    {
+      title: "Event 3",
+      image: "/events/5.jpeg",
+    },
+  ];
   return (
     <>
       <div className="relative h-screen bg-black">
@@ -78,6 +100,37 @@ export default function Home() {
               </Card>
             ))}
           </div>
+        </FadeInSection>
+        <FadeInSection>
+          <h1 className="text-4xl md:text-5xl font-bold mt-20 mb-10 text-center">
+            Recent Events
+          </h1>
+          <p className="text-xl font-extralight text-center">
+            Check out the latest professional development and community-building
+            events hosted by the Harvard Computer Society:
+          </p>
+          <CustomCarousel>
+            {events.map((e) => (
+              <div
+                key={e.title}
+                className="group relative flex flex-col items-center justify-center bg-white rounded-xl shadow-lg p-3 my-2 mx-2 min-w-100 h-80"
+              >
+                <Image
+                  src={e.image}
+                  alt="Event"
+                  fill
+                  className="rounded-lg object-cover"
+                />
+                <h2 className="text-2xl font-bold mt-5">{e.title}</h2>
+              </div>
+            ))}
+          </CustomCarousel>
+          <Link
+            href="/contact"
+            className="flex w-full items-center justify-center"
+          >
+            <Button size="xl">Get Involved</Button>
+          </Link>
         </FadeInSection>
         <FadeInSection>
           <h1 className="text-4xl md:text-5xl font-bold mt-20 mb-10 text-center">
@@ -132,6 +185,26 @@ export default function Home() {
               <Image
                 src="/sponsors/citadel.jpg"
                 alt="Citadel Logo"
+                fill
+                style={{
+                  objectFit: "contain",
+                }}
+              />
+            </a>
+            <a href="https://www.deshaw.com/" target="_blank" rel="noreferrer">
+              <Image
+                src="/sponsors/deshaw.jpg"
+                alt="D.E. Shaw Logo"
+                fill
+                style={{
+                  objectFit: "contain",
+                }}
+              />
+            </a>
+            <a href="https://www.axiom.xyz/" target="_blank" rel="noreferrer">
+              <Image
+                src="/sponsors/axiom.jpg"
+                alt="Axiom Logo"
                 fill
                 style={{
                   objectFit: "contain",
