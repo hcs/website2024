@@ -34,7 +34,7 @@ The HCS website is deployed using [Cloudfront](https://aws.amazon.com/cloudfront
 
 After running `npm run build`, a `/out` folder will be created. To deploy the project on [hcs.harvard.edu](https://hcs.harvard.edu):
 
-- Navigate to the `hcs-2024-website` [Amazon S3 bucket](https://us-east-1.console.aws.amazon.com/s3/buckets/hcs-2024-website?region=us-east-1&bucketType=general&tab=objects)
+- Navigate to the `hcs-website-latest` [Amazon S3 bucket](https://us-east-1.console.aws.amazon.com/s3/buckets/)
 - Delete all of the objects currently in the bucket
 - Upload the contents of the `/out` folder to the root of the bucket
 
