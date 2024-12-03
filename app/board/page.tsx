@@ -18,14 +18,19 @@ export default function Board() {
         />
       </div>
       <CodeText text="HCS Board" />
-      <div className="p-12 md:p-24">
+      <div className="px-12 md:px-24 py-16">
         <FadeInSection>
-          <h1 className="text-3xl md:text-5xl font-bold mb-20 text-center">
+          <h1 className="text-3xl md:text-5xl font-bold mb-5 text-center">
             Meet the Board
           </h1>
-        </FadeInSection>
-        <FadeInSection>
-          <div className="flex flex-row flex-wrap gap-32 my-10 justify-center">
+          <Image
+            src="/board/all.png"
+            alt="Board"
+            width={1000}
+            height={500}
+            className="rounded-sm md:rounded-[50px] mx-auto my-16"
+          />
+          <div className="flex flex-row flex-wrap gap-32 mt-16 justify-center">
             <ProfileCard
               name="Emily Sun"
               position="President"
